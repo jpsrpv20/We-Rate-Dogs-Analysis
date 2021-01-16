@@ -34,8 +34,8 @@ As a result, several issues were found. These can be classified in 2 groups: Qua
 
 _**Note**_: This process was not exhaustive. I limited the amount of issues to 10 but there are potentially many more data issues left to fix.
 
-### Quality
-**twitter_arch**
+## Quality
+### **twitter_arch**
 * retweeted_status_id is NaN in 2175 rows, this should be 0 instead.
 * Remove 112 retweets.
 * Remove images associated to retweets.
@@ -44,10 +44,10 @@ _**Note**_: This process was not exhaustive. I limited the amount of issues to 1
 * Source has html, this should be removed to show a more readable source.
 * The following columns should be datetime instead of string: timestamp, retweet_status_timestamp.
 * Remove the in_reply_to_status_id, in_reply_to_user_id, retweeted_status_id, retweeted_status_user_id since we won't do any analysis on those columns.
-**image_pred**
+### **image_pred**
 * 66 duplicate images.
 * There are some tweets missing images.
-### Tidiness
+## Tidiness
 * The dog statuses are in 4 different columns when they could just be in 1.
 * The twitter_arch and tweet_json tables can be merged.
 ## Clean
